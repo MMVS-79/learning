@@ -17,4 +17,4 @@ function anagramChecker(arr1,arr2){
 };
 
 
-anagramChecker([1,2,3],[2,2,2,2]);
+anagramChecker([1,2],[2,2,2,2], 'test');
