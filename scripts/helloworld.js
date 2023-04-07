@@ -2,7 +2,7 @@
 
 // your code
 
-console.log("hellow world")
+console.log("hellow world");
 
 function logAtMost10(n) {
     for (var i = 1; i <= Math.min(n, 10); i++) {
@@ -16,6 +16,6 @@ function logAtLeast10(n) {
     }
 }
 
-logAtLeast10(6)
+logAtLeast10(6);
 
 ///testSS
