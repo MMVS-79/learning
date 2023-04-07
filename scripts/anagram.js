@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-
+// FREQUNCY COUNTER PATTERN
 
 function anagramChecker(arr1,arr2){
 
