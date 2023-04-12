@@ -27,15 +27,15 @@ function mBsearch(arr,val){
 
         else if (val > arr[mPointer]){
 
-            lPointer ++;
-            mPointer = Math.round((lPointer + rPointer) / 2);
+            lPointer = mPointer + 1;
+            mPointer = Math.floor((lPointer + rPointer) / 2);
 
         }
 
         else if (val < arr[mPointer]){
 
-            rPointer --;
-            mPointer = Math.round((lPointer + rPointer) / 2);
+            rPointer = mPointer - 1;
+            mPointer = Math.floor((lPointer + rPointer) / 2);
 
         }        
         
@@ -47,4 +47,7 @@ function mBsearch(arr,val){
     return -1;
 }
 
-console.log(mBsearch([1,2,3,4,5,6,7,8,9,10,11,12],5));
+//in array case
+console.log(mBsearch([1,2,3,4,5,6,7,8,20,21,30,40],21));
+//not in array case
+console.log(mBsearch([1,2,3,4,5,6,7,8,20,21,30,40],31));
