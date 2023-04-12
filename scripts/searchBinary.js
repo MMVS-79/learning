@@ -18,7 +18,7 @@ function mBsearch(arr,val){
     var rPointer = (arr.length) -1;
     var mPointer = Math.round((lPointer + rPointer) / 2);
 
-    while (lPointer < rPointer){
+    while (lPointer <= rPointer){
 
         if ( val === arr[mPointer]){
 
@@ -28,14 +28,14 @@ function mBsearch(arr,val){
         else if (val > arr[mPointer]){
 
             lPointer = mPointer + 1;
-            mPointer = Math.floor((lPointer + rPointer) / 2);
+            mPointer = Math.round((lPointer + rPointer) / 2);
 
         }
 
         else if (val < arr[mPointer]){
 
             rPointer = mPointer - 1;
-            mPointer = Math.floor((lPointer + rPointer) / 2);
+            mPointer = Math.round((lPointer + rPointer) / 2);
 
         }        
         
@@ -48,6 +48,6 @@ function mBsearch(arr,val){
 }
 
 //in array case
-console.log(mBsearch([1,2,3,4,5,6,7,8,20,21,30,40],21));
+console.log(mBsearch([1,2,3,4,5,6,7,8,20,21,30,40,111],21));
 //not in array case
-console.log(mBsearch([1,2,3,4,5,6,7,8,20,21,30,40],31));
+console.log(mBsearch([1,2,3,4,5,6,7,8,20,21,30,40,111],31));
