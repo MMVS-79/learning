@@ -36,6 +36,17 @@ class SinglyLinkedList{
         return current;
     }
     
+    insert(index, val){
+        if(index < 0 || index > this.length) return false;
+        
+        var newNode = new Node(val);
+        var prev = this.get(index - 1);
+        var temp = prev.next;
+        prev.next = newNode;
+        newNode.next = temp;
+        this.length++;
+        return true;
+    }
 }
 
 
