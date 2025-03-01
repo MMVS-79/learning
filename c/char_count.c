@@ -27,11 +27,11 @@ int main()
 
 	if (c == ' ' || c == '\n' || c == '\t'){
 	    state = OUT;
-	}
-	else if (state == OUT){
+	}else if (state == OUT){
 	    state = IN;
 	    ++nw;
 	}
+
 	++nc;
 
 	// Store character if there's space left
