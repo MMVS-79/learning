@@ -17,12 +17,13 @@ int main (){
 	if (len > max){
 	    max=len;
 	    copy(longest, line);
-	}
+     	}
+        if(max > 0 ){ // There was a line
+	printf("%s", longest);
+        }
+
     }
 
-    if(max > 0 ){ // There was a line
-	printf("%s", longest);
-    }
 
     return 0;
 
